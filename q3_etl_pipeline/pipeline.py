@@ -10,8 +10,9 @@
 import argparse
 import logging
 import random
+from contextlib import ExitStack
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from tempfile import NamedTemporaryFile
 from time import perf_counter
 
 import numpy as np
@@ -341,16 +342,26 @@ def write_outputs(output_dir, sales, features, returns, report):
     """先写完整临时产物，写成功后再替换正式文件。"""
     output_dir.mkdir(parents=True, exist_ok=True)
     report_path = output_dir.parent / "validation_report.md"
-    tables = {"sales_facts.parquet": sales, "customer_features.parquet": features,
-              "returns_log.parquet": returns}
-    with TemporaryDirectory(prefix=".q3-", dir=output_dir.parent) as directory:
-        temp = Path(directory)
-        for name, frame in tables.items():
-            run_step(f"写入 {name}", lambda: frame.to_parquet(temp / name, engine="pyarrow", index=False))
-        (temp / report_path.name).write_text(report, encoding="utf-8")
-        for name in tables:
-            (temp / name).replace(output_dir / name)
-        (temp / report_path.name).replace(report_path)
+    tables = {output_dir / "sales_facts.parquet": sales,
+              output_dir / "customer_features.parquet": features,
+              output_dir / "returns_log.parquet": returns}
+    with ExitStack() as cleanup:
+        staged = {}
+        # 在目标目录内创建临时文件，使其继承目标目录的访问权限。
+        for destination in (*tables, report_path):
+            with NamedTemporaryFile(
+                dir=destination.parent, prefix=f".{destination.name}.", suffix=".tmp", delete=False
+            ) as temporary_file:
+                temp_path = Path(temporary_file.name)
+            cleanup.callback(temp_path.unlink, missing_ok=True)
+            staged[destination] = temp_path
+        for destination, frame in tables.items():
+            run_step(f"写入 {destination.name}", lambda: frame.to_parquet(
+                staged[destination], engine="pyarrow", index=False
+            ))
+        staged[report_path].write_text(report, encoding="utf-8")
+        for destination, temp_path in staged.items():
+            temp_path.replace(destination)
     LOGGER.info("校验报告已写入 %s", report_path)
 
 
