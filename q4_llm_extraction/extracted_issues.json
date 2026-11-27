@@ -1,379 +1,65 @@
 {
- "status": "gold_validation_only_no_full_run",
+ "status": "partial_validation_only_not_full",
  "model": "deepseek-flash",
- "prompt_version": "A-compact",
- "config": {
-  "batch": 20,
-  "thinking": "disabled",
-  "max_tokens": 2500
- },
- "rows_requested": 132,
- "rows_valid": 130,
- "rows_failed": 2,
- "full_corpus_eligible": 14445,
- "full_corpus_processed": 0,
- "note": "132 gold reviews were processed for validation; the 14,445-row production run was NOT started.",
- "failure_reasons": [
-  {
-   "review_id": "c1f6424ccdc7843778dc7ee81113f762",
-   "errors": [
-    "quote"
-   ]
-  },
-  {
-   "review_id": "f6109ca3020f7bf2dc87d5b7fcf7b23a",
-   "errors": [
-    "quote"
-   ]
-  }
- ],
+ "prompt_version": "A-v2.1",
+ "rows": 131,
+ "full_target": 14445,
+ "full_processed": 0,
+ "note": "14,445 full run not executed: remaining balance 5.76 CNY < estimated 32.1 CNY",
  "results": [
   {
-   "review_id": "44bb8c2ad3bb9c2bb3552a034eeffc4c",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "medium",
-     "evidence_quote": "é recebi um bebedouro Rosa",
-     "evidence_quote_en": "received a pink water dispenser"
-    }
-   ],
-   "sentiment_score": -0.5,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "445039377c9ce49bbfa8e4822c99ead7",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "um produto não veio",
-     "evidence_quote_en": "one product did not arrive"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "67813af101b9a11041225098c3864529",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "o produto veio com defeito, a mídia esta corrompida",
-     "evidence_quote_en": "product came defective, media corrupted"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "4dbf2f4e4838fea96341c87493f08c7e",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "nunca recebi nenhum relógio",
-     "evidence_quote_en": "never received any watch"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "edb8423465e501f510c97eb1e0f80e72",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "low",
-     "evidence_quote": "a tampa é branca",
-     "evidence_quote_en": "the lid is white"
-    }
-   ],
-   "sentiment_score": -0.4,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "88853b30cf3362c56a2a2401beac2c97",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "Recebi apenas um produto, e não dois",
-     "evidence_quote_en": "received only one product, not two"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "f3c1f6bc7f88839f2647f3c7808a2f02",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "esta faltando o do homem aranha",
-     "evidence_quote_en": "the Spider-Man one is missing"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "320626ac677dd68173c21591f0c92bf7",
-   "issues": [
-    {
-     "category": "other",
-     "severity": "medium",
-     "evidence_quote": "o mesmo estava com 20,00 de diferença a menos",
-     "evidence_quote_en": "price differed by 20.00 less"
-    }
-   ],
-   "sentiment_score": -0.6,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "3f6b94e58d8dbcde1f807e337f37cce2",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "medium",
-     "evidence_quote": "o produto veio embalado mas com sinal de uso",
-     "evidence_quote_en": "product came with signs of use"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "solicitei a troca e devolucao do dinheiro e não retornaram",
-     "evidence_quote_en": "requested exchange and refund, no response"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "b76eca59d904c0c59b377c412194e9e1",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "uma demora tremenda para receber o produto",
-     "evidence_quote_en": "huge delay to receive product"
-    },
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "pra quando chegar vim errado",
-     "evidence_quote_en": "when it arrived it was wrong"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "2008bdf4c9a947f47b7a01da4693e4ae",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "medium",
-     "evidence_quote": "o trocador estava sujo nas extremidades",
-     "evidence_quote_en": "the changer was dirty at edges"
-    },
-    {
-     "category": "packaging",
-     "severity": "medium",
-     "evidence_quote": "A caixa estava violada",
-     "evidence_quote_en": "the box was tampered"
-    }
-   ],
-   "sentiment_score": -0.7,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "940b44b476d684f3b0912fe6f90b77c1",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "veio faltando o urso mini",
-     "evidence_quote_en": "the mini bear was missing"
-    }
-   ],
-   "sentiment_score": -0.5,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "2e4bd919c76bcd73e742995054200e4c",
-   "issues": [
-    {
-     "category": "packaging",
-     "severity": "low",
-     "evidence_quote": "O produto chegou com a caixa amassada",
-     "evidence_quote_en": "product arrived with crushed box"
-    }
-   ],
-   "sentiment_score": -0.4,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "c9f345723b16bba74d67ccba383f08b2",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "medium",
-     "evidence_quote": "o que fora enviado é de cor diversa e de qualidade inferior",
-     "evidence_quote_en": "sent item is different color and inferior quality"
-    }
-   ],
-   "sentiment_score": -0.7,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "86b2d291de4ad5e739da3f61c91d45da",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "Todos os produtos chegaram quebrados",
-     "evidence_quote_en": "all products arrived broken"
-    },
-    {
-     "category": "packaging",
-     "severity": "high",
-     "evidence_quote": "eles foram muito mau embalados",
-     "evidence_quote_en": "they were very poorly packaged"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "a492b3efc47eb9096c41de9d772cc4f3",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "Ainda não recebi",
-     "evidence_quote_en": "still have not received"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "b54d93335f6d35fd40f41494ca9bf0fa",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "O produto chegou e não é um produto original",
-     "evidence_quote_en": "product arrived and is not original"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "0ec47b2e146653bcc5e3b5d06f75acbc",
-   "issues": [],
-   "sentiment_score": 0.9,
-   "actionable_for_seller": false,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "af73e2ba5098ca6c02e8079aa82bfa78",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "Pedi uma colcha 100% algodão e veio 100% poliester",
-     "evidence_quote_en": "ordered 100% cotton, got 100% polyester"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "d1eaa25699015750277cc1008a635015",
-   "issues": [
-    {
-     "category": "packaging",
-     "severity": "low",
-     "evidence_quote": "a embalagem externa (caixa) é branca e tem apenas o nome do perfume",
-     "evidence_quote_en": "outer packaging is plain tester box"
-    }
-   ],
-   "sentiment_score": -0.3,
-   "actionable_for_seller": true,
-   "confidence": 0.85
-  },
-  {
+   "sid": "012b61c7593e-014263",
    "review_id": "cb240a599592270cfe68c67fa741f381",
    "issues": [
     {
      "category": "missing_item",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "ainda aguardando contato para saber do outro produto que falta",
-     "evidence_quote_en": "still waiting for contact about the other missing product"
+     "evidence_quote_en": "still waiting for contact about the missing product"
     }
    ],
-   "sentiment_score": -0.6,
+   "sentiment_score": -0.4,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-014349",
    "review_id": "fb6df08bfc9e8eab7bc81fe40aaab167",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "As capas das maçanetas vieram erradas",
-     "evidence_quote_en": "The door handle covers came wrong"
+     "evidence_quote_en": "the door handle covers came wrong"
     },
     {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "as maçanetas não servem",
-     "evidence_quote_en": "the handles don't fit"
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "na embalagem somente celta e prisma",
+     "evidence_quote_en": "in the packaging only celta and prisma"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-014637",
    "review_id": "77ff32ee0f3abe7ecf09c5ab2ec9d053",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
-     "evidence_quote": "Ainda nao recebi o produto",
+     "evidence_quote": "Ainda nao recebi o produto.",
      "evidence_quote_en": "I still haven't received the product"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-015832",
    "review_id": "db0fba8bbfea8dff7c160e1b35f32f32",
    "issues": [
     {
@@ -385,16 +71,17 @@
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-019207",
    "review_id": "8076b9618ddb90bee801fe136ffb4390",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "Produto não entregue",
-     "evidence_quote_en": "Product not delivered"
+     "evidence_quote_en": "product not delivered"
     }
    ],
    "sentiment_score": -0.9,
@@ -402,48 +89,37 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-019242",
    "review_id": "5e2a545c59a9919c602fd1c4d8b5616f",
    "issues": [],
    "sentiment_score": 0.1,
    "actionable_for_seller": false,
-   "confidence": 0.8
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-019356",
    "review_id": "90a2b557c0b0ceb25e48807fbbd5ba39",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "medium",
      "evidence_quote": "me enviarao o produto com outra embalagem",
-     "evidence_quote_en": "they sent the product in another packaging"
+     "evidence_quote_en": "they sent the product with another packaging"
     }
    ],
-   "sentiment_score": -0.5,
+   "sentiment_score": -0.4,
    "actionable_for_seller": true,
-   "confidence": 0.7
+   "confidence": 0.6
   },
   {
+   "sid": "012b61c7593e-019710",
    "review_id": "8f91e08cfb03051ac4e3f1b512eafc34",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
      "evidence_quote": "apenas o suporte foi entregue. O tapete não chegou",
-     "evidence_quote_en": "only the support was delivered. The mat didn't arrive"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "ca5d82fcf9beaa71384240a0128108da",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "não foi a grade turma da mônica, eles me mandaram outra grade",
-     "evidence_quote_en": "it wasn't the Monica's gang grid, they sent another grid"
+     "evidence_quote_en": "only the support was delivered, the mat didn't arrive"
     }
    ],
    "sentiment_score": -0.7,
@@ -451,20 +127,37 @@
    "confidence": 0.9
   },
   {
-   "review_id": "579b16bed4318cce950b23fc988c4810",
-   "issues": [],
-   "sentiment_score": 0.2,
-   "actionable_for_seller": false,
-   "confidence": 0.8
+   "sid": "012b61c7593e-019981",
+   "review_id": "ca5d82fcf9beaa71384240a0128108da",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "high",
+     "evidence_quote": "o produto q eu recebi não foi a grade turma da mônica, eles me mandaram outra grade",
+     "evidence_quote_en": "I received a different grid than ordered"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-020263",
+   "review_id": "579b16bed4318cce950b23fc988c4810",
+   "issues": [],
+   "sentiment_score": 0.1,
+   "actionable_for_seller": false,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-020644",
    "review_id": "250547e2b972461fd01b405b259738c9",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "Produto veio com defeito, uma das costuras internas não foi feita",
-     "evidence_quote_en": "Product came defective, one internal seam wasn't done"
+     "evidence_quote_en": "product came defective, an internal seam was not done"
     }
    ],
    "sentiment_score": -0.8,
@@ -472,34 +165,22 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-021259",
    "review_id": "8af2a61ddddd3ee9a25fb2430ad4225b",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "O conector USB que entregaram é diferente do que foi anunciado",
-     "evidence_quote_en": "The USB connector delivered is different from advertised"
+     "evidence_quote_en": "the USB connector delivered differs from advertised"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
-   "review_id": "cbed3b30debbbc95db8cc88c7c040139",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "1 não chegou",
-     "evidence_quote_en": "1 didn't arrive"
-    }
-   ],
-   "sentiment_score": -0.6,
-   "actionable_for_seller": true,
-   "confidence": 0.8
-  },
-  {
+   "sid": "012b61c7593e-023010",
    "review_id": "3e5855205340c723730123053cc1171f",
    "issues": [
     {
@@ -507,61 +188,71 @@
      "severity": "high",
      "evidence_quote": "Faltou 2 produtos na entrega",
      "evidence_quote_en": "2 products were missing in the delivery"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "tive de ligar na loja para reclamar",
+     "evidence_quote_en": "I had to call the store to complain"
     }
    ],
    "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-023070",
    "review_id": "a84693b92ff540def3591f682d7b1da3",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
-     "evidence_quote": "veio faltando parafuso e ainda não encaixa no vaso",
-     "evidence_quote_en": "came missing a screw and doesn't fit the toilet"
+     "evidence_quote": "O produto é de péssima qualidade veio faltando parafuso e ainda não encaixa no vaso",
+     "evidence_quote_en": "product is poor quality, missing screw and doesn't fit"
     },
     {
      "category": "missing_item",
      "severity": "medium",
      "evidence_quote": "veio faltando parafuso",
-     "evidence_quote_en": "came missing a screw"
+     "evidence_quote_en": "a screw was missing"
     }
    ],
    "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-023098",
    "review_id": "0b6c554ef086e07c917c1606955b1e5d",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "não funciona (não carrega a bateria do meu celular LG)",
-     "evidence_quote_en": "doesn't work (doesn't charge my LG phone battery)"
+     "evidence_quote_en": "doesn't work, doesn't charge my phone"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-023165",
    "review_id": "030883ae6b53796dcd2a4c323da8ae1d",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "Meu pedido chegou faltando um produto",
-     "evidence_quote_en": "My order arrived missing a product"
+     "evidence_quote": "Meu pedido chegou faltando um produto.",
+     "evidence_quote_en": "my order arrived missing a product"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-024712",
    "review_id": "c26b6df817496dec9356ec34768f8b85",
    "issues": [
     {
@@ -576,13 +267,14 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-024806",
    "review_id": "51f815adf29b6ad62759bd667395f7ab",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "comprei um cavalinho e mandaram um urso horrível",
-     "evidence_quote_en": "I bought a little horse and they sent a horrible bear"
+     "evidence_quote_en": "bought a horse and they sent a horrible bear"
     }
    ],
    "sentiment_score": -0.8,
@@ -590,171 +282,14 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-025554",
    "review_id": "220bddad92daca269b8fb67ddafecdb8",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
      "evidence_quote": "Recebi apenas a estante azul. Está faltando a entrega da segunda estante",
-     "evidence_quote_en": "I only received the blue shelf. The second shelf is missing"
-    }
-   ],
-   "sentiment_score": -0.7,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "d2c096147a2da493211ada11527ef085",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "Produto totalmente diferente do da foto",
-     "evidence_quote_en": "product totally different from photo"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "e6304e6e948027131babe780211868a7",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "faz mais de um mês nada da entrega",
-     "evidence_quote_en": "over a month, no delivery"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "0de9c898aa0d98dd8b87e97c0d48d929",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "Ainda não recebi minha encomenda",
-     "evidence_quote_en": "still haven't received my order"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "3ff91af508ecdaac48dc42be8de10fad",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "high",
-     "evidence_quote": "a mercadoria ainda não chegou",
-     "evidence_quote_en": "goods still haven't arrived"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "43d8e78966af9a8945cd778a29cd4ee3",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "Comprei dois toners e só veio um",
-     "evidence_quote_en": "bought two toners, only one came"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "a66d3c06f6b4382ee6c1e025992d6455",
-   "issues": [
-    {
-     "category": "delivery_late",
-     "severity": "medium",
-     "evidence_quote": "atrasou a entrega",
-     "evidence_quote_en": "delivery was delayed"
-    }
-   ],
-   "sentiment_score": -0.4,
-   "actionable_for_seller": false,
-   "confidence": 0.85
-  },
-  {
-   "review_id": "fb9d26ae601018d2c1253e9af35b14e7",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "Produto entregue não condiz com o produto comprado",
-     "evidence_quote_en": "delivered product doesn't match purchased"
-    },
-    {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "assessório veio quebrado",
-     "evidence_quote_en": "accessory came broken"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "d6b490cb458afc3d5c35b1b91a9a8a95",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "o produto veio danificado",
-     "evidence_quote_en": "product came damaged"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "medium",
-     "evidence_quote": "ainda nao recebi o email que ficaram de me enviar",
-     "evidence_quote_en": "still haven't received promised email"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "5dca5f583458bbd395f1c8cfa4bded02",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "eram 3 pendentes e veio somente um",
-     "evidence_quote_en": "3 pendants, only one came"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "ninguém respondeu meu email da reclamação",
-     "evidence_quote_en": "no one answered my complaint email"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "98b7288eab50b56ad78f9e9f23839aaf",
-   "issues": [
-    {
-     "category": "quality_defect",
-     "severity": "medium",
-     "evidence_quote": "Produto apresentava bordas amassadas",
-     "evidence_quote_en": "product had dented edges"
+     "evidence_quote_en": "received only the blue shelf, second shelf missing"
     }
    ],
    "sentiment_score": -0.6,
@@ -762,140 +297,44 @@
    "confidence": 0.9
   },
   {
-   "review_id": "14cbabf3490837a3af22eb045eed5f40",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "não recebi a capa",
-     "evidence_quote_en": "didn't receive the cover"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "tentei entrar em contato mas não tive retorno",
-     "evidence_quote_en": "tried contacting, no response"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "7f09f03694c54612dbfcaeed363077d2",
-   "issues": [],
-   "sentiment_score": 0.8,
-   "actionable_for_seller": false,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "c66e9a57eadff9db81376d5ce7517ab1",
+   "sid": "012b61c7593e-001210",
+   "review_id": "44bb8c2ad3bb9c2bb3552a034eeffc4c",
    "issues": [
     {
      "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "mandaram uma fragrancia diferente da que eu pedi",
-     "evidence_quote_en": "sent different fragrance than ordered"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "nao retornaram meu email de reclamaçao",
-     "evidence_quote_en": "didn't return my complaint email"
+     "severity": "medium",
+     "evidence_quote": "comprei um bebedouro vermelho metálico... é recebi um bebedouro Rosa",
+     "evidence_quote_en": "ordered red, received pink"
     }
    ],
-   "sentiment_score": -0.9,
+   "sentiment_score": -0.5,
    "actionable_for_seller": true,
    "confidence": 0.95
   },
   {
-   "review_id": "b23884a121b0d630f7f4a8120aa9b0e2",
+   "sid": "012b61c7593e-001403",
+   "review_id": "445039377c9ce49bbfa8e4822c99ead7",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "não recebi a almofada",
-     "evidence_quote_en": "didn't receive the cushion"
-    },
-    {
-     "category": "packaging",
-     "severity": "medium",
-     "evidence_quote": "caixa aberta/rasgada",
-     "evidence_quote_en": "box open/torn"
+     "evidence_quote": "um produto não veio: Trata-se de um Pendente Em Alumínio Meia Bola Medio Escovado",
+     "evidence_quote_en": "one product did not arrive"
     }
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "7db2631738c433cc51917db13aa2e747",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "veio uma marmotenta colorida",
-     "evidence_quote_en": "came a colored one instead"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "67b483feff73ec0d62976546fd962d9b",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "com peça faltando",
-     "evidence_quote_en": "with missing part"
-    },
-    {
-     "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "uma das peças foi entregue quebrada",
-     "evidence_quote_en": "one part delivered broken"
-    },
-    {
-     "category": "packaging",
-     "severity": "medium",
-     "evidence_quote": "mal embalada",
-     "evidence_quote_en": "poorly packaged"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
    "confidence": 0.95
   },
   {
-   "review_id": "bae557787e51ce869c55c33d0cad1b5b",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "Comprei 2 unidades veio só uma",
-     "evidence_quote_en": "bought 2 units, only one came"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "tel da nota não atende",
-     "evidence_quote_en": "invoice phone doesn't answer"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "28053bd1553ef05656854c1c6309b60e",
+   "sid": "012b61c7593e-001810",
+   "review_id": "67813af101b9a11041225098c3864529",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
-     "evidence_quote": "o controle veio com defeito",
-     "evidence_quote_en": "controller came defective"
+     "evidence_quote": "o produto veio com defeito, a mídia esta corrompida",
+     "evidence_quote_en": "product came defective, media corrupted"
     }
    ],
    "sentiment_score": -0.7,
@@ -903,19 +342,209 @@
    "confidence": 0.95
   },
   {
-   "review_id": "86adf80f185cb0b6c9e61e2b9e9bb0c4",
+   "sid": "012b61c7593e-002182",
+   "review_id": "4dbf2f4e4838fea96341c87493f08c7e",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "high",
+     "evidence_quote": "To esperando até agora nunca recebi nenhum relógio",
+     "evidence_quote_en": "still waiting, never received watch"
+    }
+   ],
+   "sentiment_score": -0.9,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-003702",
+   "review_id": "edb8423465e501f510c97eb1e0f80e72",
    "issues": [
     {
      "category": "wrong_product",
+     "severity": "low",
+     "evidence_quote": "se fala que a tampa é preta e ao contrário disso a tampa é branca",
+     "evidence_quote_en": "lid described black but is white"
+    }
+   ],
+   "sentiment_score": -0.4,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-004109",
+   "review_id": "88853b30cf3362c56a2a2401beac2c97",
+   "issues": [
+    {
+     "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "recebi um produto na cor errada, no modelo errado",
-     "evidence_quote_en": "received wrong color and model"
+     "evidence_quote": "Recebi apenas um produto, e não dois, como paguei",
+     "evidence_quote_en": "received only one product, not two"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-004296",
+   "review_id": "f3c1f6bc7f88839f2647f3c7808a2f02",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "so entregou um relogio, esta faltando o do homem aranha",
+     "evidence_quote_en": "only one watch delivered, spider-man missing"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-004648",
+   "review_id": "320626ac677dd68173c21591f0c92bf7",
+   "issues": [
+    {
+     "category": "other",
+     "severity": "medium",
+     "evidence_quote": "quando coloquei na minha cesta tava um preço e passou uns dias e fui fechar a compra o mesmo estava com 20,00 de diferença",
+     "evidence_quote_en": "price changed by 20 reais"
+    }
+   ],
+   "sentiment_score": -0.5,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-004957",
+   "review_id": "3f6b94e58d8dbcde1f807e337f37cce2",
+   "issues": [
+    {
+     "category": "seller_communication",
+     "severity": "high",
+     "evidence_quote": "solicitei a troca a targaryen e até o momento não obtive retorno",
+     "evidence_quote_en": "requested exchange, no return"
     },
     {
      "category": "quality_defect",
+     "severity": "medium",
+     "evidence_quote": "o produto veio embalado mas com sinal de uso",
+     "evidence_quote_en": "product came with signs of use"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-005197",
+   "review_id": "b76eca59d904c0c59b377c412194e9e1",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "medium",
+     "evidence_quote": "uma demora tremenda para receber o produto",
+     "evidence_quote_en": "huge delay to receive product"
+    },
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "pra quando chegar vim errado",
+     "evidence_quote_en": "arrived wrong"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-006561",
+   "review_id": "2008bdf4c9a947f47b7a01da4693e4ae",
+   "issues": [
+    {
+     "category": "packaging",
+     "severity": "medium",
+     "evidence_quote": "A caixa estava violada",
+     "evidence_quote_en": "box was tampered/opened"
+    },
+    {
+     "category": "quality_defect",
+     "severity": "medium",
+     "evidence_quote": "o trocador estava sujo nas extremidades, assim como dois pés da banheira",
+     "evidence_quote_en": "product dirty, signs of display use"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-006763",
+   "review_id": "940b44b476d684f3b0912fe6f90b77c1",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "recebi o produto de forma incompleta, veio faltando o urso mini",
+     "evidence_quote_en": "incomplete, mini bear missing"
+    }
+   ],
+   "sentiment_score": -0.4,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-006868",
+   "review_id": "2e4bd919c76bcd73e742995054200e4c",
+   "issues": [
+    {
+     "category": "packaging",
+     "severity": "low",
+     "evidence_quote": "O produto chegou com a caixa amassada",
+     "evidence_quote_en": "box arrived crushed"
+    }
+   ],
+   "sentiment_score": -0.3,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-008280",
+   "review_id": "c9f345723b16bba74d67ccba383f08b2",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "Produto não corresponde ao da foto pois o que fora enviado é de cor diversa",
+     "evidence_quote_en": "product differs from photo, different color"
+    },
+    {
+     "category": "quality_defect",
+     "severity": "medium",
+     "evidence_quote": "de qualidade inferior",
+     "evidence_quote_en": "inferior quality"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-009149",
+   "review_id": "86b2d291de4ad5e739da3f61c91d45da",
+   "issues": [
+    {
+     "category": "quality_defect",
      "severity": "high",
-     "evidence_quote": "barulho de peças miúdas soltas dentro dele",
-     "evidence_quote_en": "loose parts rattling inside"
+     "evidence_quote": "Todos os produtos chegaram quebrados",
+     "evidence_quote_en": "all products arrived broken"
+    },
+    {
+     "category": "packaging",
+     "severity": "high",
+     "evidence_quote": "eles foram muito mau embalados e não tinha especificação na caixa falando q era produto frágil",
+     "evidence_quote_en": "badly packed, no fragile marking"
     }
    ],
    "sentiment_score": -0.9,
@@ -923,13 +552,450 @@
    "confidence": 0.95
   },
   {
+   "sid": "012b61c7593e-009913",
+   "review_id": "a492b3efc47eb9096c41de9d772cc4f3",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "high",
+     "evidence_quote": "Ainda não recebi",
+     "evidence_quote_en": "still not received"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-010345",
+   "review_id": "b54d93335f6d35fd40f41494ca9bf0fa",
+   "issues": [
+    {
+     "category": "quality_defect",
+     "severity": "high",
+     "evidence_quote": "O produto chegou e não é um produto original",
+     "evidence_quote_en": "product is not original"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-010528",
+   "review_id": "0ec47b2e146653bcc5e3b5d06f75acbc",
+   "issues": [],
+   "sentiment_score": 0.9,
+   "actionable_for_seller": false,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-012428",
+   "review_id": "af73e2ba5098ca6c02e8079aa82bfa78",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "Pedi uma colcha 100% algodão e veio 100% poliester",
+     "evidence_quote_en": "ordered cotton, received polyester"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-013414",
+   "review_id": "d1eaa25699015750277cc1008a635015",
+   "issues": [
+    {
+     "category": "packaging",
+     "severity": "low",
+     "evidence_quote": "a embalagem externa (caixa) é branca e tem apenas o nome do perfume e a escrita \"Tester\"",
+     "evidence_quote_en": "tester packaging, unpleasant for gifting"
+    }
+   ],
+   "sentiment_score": -0.2,
+   "actionable_for_seller": true,
+   "confidence": 0.7
+  },
+  {
+   "sid": "012b61c7593e-025609",
+   "review_id": "d2c096147a2da493211ada11527ef085",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "Produto totalmente diferente do da foto",
+     "evidence_quote_en": "Product totally different from the photo"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-025855",
+   "review_id": "e6304e6e948027131babe780211868a7",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "high",
+     "evidence_quote": "comprei e já faz mais de um mês nada da entrega",
+     "evidence_quote_en": "bought over a month ago, no delivery"
+    }
+   ],
+   "sentiment_score": -0.9,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-026521",
+   "review_id": "0de9c898aa0d98dd8b87e97c0d48d929",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "high",
+     "evidence_quote": "Ainda não recebi minha encomenda",
+     "evidence_quote_en": "Still haven't received my order"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-026795",
+   "review_id": "3ff91af508ecdaac48dc42be8de10fad",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "high",
+     "evidence_quote": "a mercadoria ainda não chegou",
+     "evidence_quote_en": "the goods haven't arrived yet"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-026924",
+   "review_id": "43d8e78966af9a8945cd778a29cd4ee3",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "Comprei dois toners e só veio um",
+     "evidence_quote_en": "Bought two toners, only one came"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.95
+  },
+  {
+   "sid": "012b61c7593e-027003",
+   "review_id": "a66d3c06f6b4382ee6c1e025992d6455",
+   "issues": [
+    {
+     "category": "delivery_late",
+     "severity": "medium",
+     "evidence_quote": "houve um imprevisto com a entregadora (correios) que atrasou a entrega",
+     "evidence_quote_en": "carrier delayed the delivery"
+    }
+   ],
+   "sentiment_score": -0.3,
+   "actionable_for_seller": false,
+   "confidence": 0.8
+  },
+  {
+   "sid": "012b61c7593e-027209",
+   "review_id": "fb9d26ae601018d2c1253e9af35b14e7",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "high",
+     "evidence_quote": "Produto entregue não condiz com o produto comprado",
+     "evidence_quote_en": "Delivered product doesn't match the purchased one"
+    },
+    {
+     "category": "quality_defect",
+     "severity": "high",
+     "evidence_quote": "péssima qualidade, assessório veio quebrado",
+     "evidence_quote_en": "terrible quality, accessory came broken"
+    }
+   ],
+   "sentiment_score": -0.9,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-028546",
+   "review_id": "d6b490cb458afc3d5c35b1b91a9a8a95",
+   "issues": [
+    {
+     "category": "quality_defect",
+     "severity": "high",
+     "evidence_quote": "o produto veio danificado",
+     "evidence_quote_en": "the product came damaged"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-032950",
+   "review_id": "5dca5f583458bbd395f1c8cfa4bded02",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "high",
+     "evidence_quote": "Minha compra eram 3 pendentes e veio somente um na caixa",
+     "evidence_quote_en": "Order was 3 pendants, only one came"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "Até agora ninguém respondeu meu email da reclamação",
+     "evidence_quote_en": "No one answered my complaint email"
+    }
+   ],
+   "sentiment_score": -0.85,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-033760",
+   "review_id": "98b7288eab50b56ad78f9e9f23839aaf",
+   "issues": [
+    {
+     "category": "quality_defect",
+     "severity": "low",
+     "evidence_quote": "Produto apresentava bordas amassadas",
+     "evidence_quote_en": "Product had dented edges"
+    }
+   ],
+   "sentiment_score": -0.4,
+   "actionable_for_seller": true,
+   "confidence": 0.75
+  },
+  {
+   "sid": "012b61c7593e-034811",
+   "review_id": "14cbabf3490837a3af22eb045eed5f40",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "comprei uma garrafa térmica e uma capa de colchão e não recebi a capa",
+     "evidence_quote_en": "bought thermos and mattress cover, didn't receive the cover"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "já tentei entrar em contato mas não tive retorno",
+     "evidence_quote_en": "tried to contact but got no reply"
+    }
+   ],
+   "sentiment_score": -0.75,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-039749",
+   "review_id": "c1f6424ccdc7843778dc7ee81113f762",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "COMPREI 2 KITS DESSES PEDENTES E RECEBI SOMENTE 01 KIT",
+     "evidence_quote_en": "Bought 2 kits, received only 1"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-040215",
+   "review_id": "7f09f03694c54612dbfcaeed363077d2",
+   "issues": [],
+   "sentiment_score": 0.6,
+   "actionable_for_seller": false,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-040422",
+   "review_id": "c66e9a57eadff9db81376d5ce7517ab1",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "mandaram uma fragrancia diferente da que eu pedi",
+     "evidence_quote_en": "sent a different fragrance than ordered"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "ate agora nao retornaram meu email de reclamaçao",
+     "evidence_quote_en": "no reply to my complaint email"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-041028",
+   "review_id": "b23884a121b0d630f7f4a8120aa9b0e2",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "Só recebi o esterilizador, não recebi a almofada",
+     "evidence_quote_en": "Only got sterilizer, not the cushion"
+    },
+    {
+     "category": "packaging",
+     "severity": "medium",
+     "evidence_quote": "o esterilizador veio com a caixa aberta/rasgada",
+     "evidence_quote_en": "sterilizer box came open/torn"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-041388",
+   "review_id": "7db2631738c433cc51917db13aa2e747",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "Comprei uma capinha transparente e veio uma marmotenta colorida",
+     "evidence_quote_en": "Bought clear case, got a colored one"
+    }
+   ],
+   "sentiment_score": -0.7,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-042169",
+   "review_id": "f6109ca3020f7bf2dc87d5b7fcf7b23a",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "Eu comprei 3 unidades do pendente de só veio 1",
+     "evidence_quote_en": "Bought 3 units, only 1 came"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "ainda não obtive nenhuma resposta até o momento",
+     "evidence_quote_en": "no response so far"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-043232",
+   "review_id": "67b483feff73ec0d62976546fd962d9b",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "high",
+     "evidence_quote": "com peça faltando",
+     "evidence_quote_en": "missing a part"
+    },
+    {
+     "category": "quality_defect",
+     "severity": "high",
+     "evidence_quote": "uma das peças foi entregue quebrada",
+     "evidence_quote_en": "one part came broken"
+    },
+    {
+     "category": "packaging",
+     "severity": "medium",
+     "evidence_quote": "mal embalada",
+     "evidence_quote_en": "badly packaged"
+    }
+   ],
+   "sentiment_score": -0.9,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-043886",
+   "review_id": "bae557787e51ce869c55c33d0cad1b5b",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "Comprei 2 unidades veio só uma",
+     "evidence_quote_en": "Bought 2 units, only one came"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "tentei ligar no tel da nota não atende",
+     "evidence_quote_en": "called the number, no answer"
+    }
+   ],
+   "sentiment_score": -0.85,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-045224",
+   "review_id": "28053bd1553ef05656854c1c6309b60e",
+   "issues": [
+    {
+     "category": "quality_defect",
+     "severity": "medium",
+     "evidence_quote": "o controle veio com defeito, ele funciona mas a tampa da caixa das pilhas nao fecha",
+     "evidence_quote_en": "controller came defective, battery cover won't close"
+    }
+   ],
+   "sentiment_score": -0.6,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-047537",
+   "review_id": "86adf80f185cb0b6c9e61e2b9e9bb0c4",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "high",
+     "evidence_quote": "recebi um produto na cor errada, no modelo errado do comprado",
+     "evidence_quote_en": "received wrong color and wrong model"
+    },
+    {
+     "category": "quality_defect",
+     "severity": "medium",
+     "evidence_quote": "barulho de peças miúdas soltas dentro dele",
+     "evidence_quote_en": "loose small parts rattling inside"
+    }
+   ],
+   "sentiment_score": -0.8,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-048094",
    "review_id": "396eacbff771557619771e8d4b58ee77",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "Minha mercadoria não chegou",
-     "evidence_quote_en": "my goods did not arrive"
+     "evidence_quote_en": "my goods never arrived"
     },
     {
      "category": "seller_communication",
@@ -940,9 +1006,10 @@
    ],
    "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-049138",
    "review_id": "5f3500798d575c8915789a3592d7acf1",
    "issues": [
     {
@@ -952,11 +1019,12 @@
      "evidence_quote_en": "product is not good at all"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.8
+   "confidence": 0.6
   },
   {
+   "sid": "012b61c7593e-049987",
    "review_id": "95aa41a446f4a5b6ad9d51eadb938ede",
    "issues": [
     {
@@ -966,11 +1034,12 @@
      "evidence_quote_en": "packaging was crushed and damaged in transit"
     }
    ],
-   "sentiment_score": -0.2,
+   "sentiment_score": -0.3,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-050590",
    "review_id": "e4375aa2a373d2e148a8fe30629dfde5",
    "issues": [
     {
@@ -987,16 +1056,17 @@
     },
     {
      "category": "seller_communication",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "o mesmo não autorizou a devolução mas o reparo",
      "evidence_quote_en": "seller refused return, only repair"
     }
    ],
-   "sentiment_score": -0.9,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-051082",
    "review_id": "b8b0488f2349b4682c9af005df0f7cef",
    "issues": [
     {
@@ -1008,9 +1078,10 @@
    ],
    "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-051138",
    "review_id": "aaeb804fe1828db8cc3d8b52ec38a1fa",
    "issues": [
     {
@@ -1028,23 +1099,25 @@
    ],
    "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-051473",
    "review_id": "3a7c315bcdab652a90850c1be053575c",
    "issues": [
     {
      "category": "wrong_product",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "Cor completamente diferente do pedido",
      "evidence_quote_en": "color completely different from order"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-051845",
    "review_id": "11a637d75bbc2d651dddd8711277a20d",
    "issues": [
     {
@@ -1059,34 +1132,37 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-051954",
    "review_id": "aee1caf0b806baa0e2f95325d29df253",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "No anuncio diz que é isolado ,mas na verdade é 100% whey",
-     "evidence_quote_en": "ad says isolated but it's 100% whey"
+     "evidence_quote_en": "listing says isolated but it is 100% whey"
     }
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-053004",
    "review_id": "e6df55a4fcad12115a04d304a0a28a20",
    "issues": [
     {
      "category": "quality_defect",
-     "severity": "medium",
+     "severity": "high",
      "evidence_quote": "produto avariado",
      "evidence_quote_en": "damaged product"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-054129",
    "review_id": "e8bb97b6b648d64956948ece5f544489",
    "issues": [],
    "sentiment_score": 0.9,
@@ -1094,6 +1170,7 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-055972",
    "review_id": "0591cd11bdcf947c1514404182607906",
    "issues": [
     {
@@ -1105,9 +1182,10 @@
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-056376",
    "review_id": "e209791624da0e88e91ad1707ead0f2c",
    "issues": [
     {
@@ -1120,7 +1198,7 @@
      "category": "seller_communication",
      "severity": "high",
      "evidence_quote": "não consigo contato adequado, não tenho retorno",
-     "evidence_quote_en": "cannot reach, no response"
+     "evidence_quote_en": "cannot reach, no return"
     }
    ],
    "sentiment_score": -0.9,
@@ -1128,26 +1206,22 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-056856",
    "review_id": "8f68f6f7b52f647428efdec4e1a9b02a",
    "issues": [
     {
      "category": "missing_item",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "chegou sem algumas travas",
      "evidence_quote_en": "arrived without some locks"
-    },
-    {
-     "category": "quality_defect",
-     "severity": "medium",
-     "evidence_quote": "O produto não encaixou",
-     "evidence_quote_en": "product did not fit"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-057336",
    "review_id": "1a3b1b7b0f406cef6e42939359d0d601",
    "issues": [
     {
@@ -1157,25 +1231,27 @@
      "evidence_quote_en": "product differs from photo"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-057369",
    "review_id": "3531bd966fafb46c8911cc94aac89567",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "foi entregue apenas (1) um pote",
-     "evidence_quote_en": "only one pot delivered"
+     "evidence_quote": "foi entregue apenas (1) um pote do produto",
+     "evidence_quote_en": "only one pot delivered instead of two"
     }
    ],
    "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-057497",
    "review_id": "42bed280726542b7875993ee3408bc27",
    "issues": [
     {
@@ -1187,23 +1263,25 @@
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-058166",
    "review_id": "63d3c4216d96866a644737d71d87588d",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
      "evidence_quote": "veio faltando o varão",
-     "evidence_quote_en": "rod was missing"
+     "evidence_quote_en": "curtain rod was missing"
     }
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-058169",
    "review_id": "3f835cd72d3402daa9ce4f32507ca2fc",
    "issues": [
     {
@@ -1218,6 +1296,7 @@
    "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-058444",
    "review_id": "b16f8ba8d2a8677c090ae8f36d095db1",
    "issues": [
     {
@@ -1232,6 +1311,7 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-059154",
    "review_id": "b962f302b43079158e183fb525f4eb9d",
    "issues": [],
    "sentiment_score": 0.8,
@@ -1239,6 +1319,7 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-059179",
    "review_id": "8dec0e82fb5e9ab7e83eaed6006a5d38",
    "issues": [
     {
@@ -1249,16 +1330,17 @@
     },
     {
      "category": "seller_communication",
-     "severity": "medium",
+     "severity": "high",
      "evidence_quote": "ninguém me dá uma posição a respeito",
-     "evidence_quote_en": "nobody gives me any status"
+     "evidence_quote_en": "nobody gives me a position on it"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.9,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-059380",
    "review_id": "55407eb6d0b880a2bd33b3abd59eaf0e",
    "issues": [
     {
@@ -1270,8 +1352,8 @@
     {
      "category": "seller_communication",
      "severity": "high",
-     "evidence_quote": "Sem resposta das lojas lannister",
-     "evidence_quote_en": "No response from Lannister stores"
+     "evidence_quote": "Sem resposta das lojas lannister e sem respostas da empresa responsável",
+     "evidence_quote_en": "No response from the stores"
     }
    ],
    "sentiment_score": -0.9,
@@ -1279,6 +1361,7 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-059845",
    "review_id": "f48b51510b24041990bd99257613b2b4",
    "issues": [],
    "sentiment_score": 0.7,
@@ -1286,6 +1369,7 @@
    "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-061428",
    "review_id": "314184912cecb67a5e6de04b28c44f91",
    "issues": [
     {
@@ -1297,16 +1381,17 @@
    ],
    "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-062060",
    "review_id": "8094797660b57a0099a766bb217303ae",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "CONSTA QUE FOI ENTREGUE MAS NÃO CHEGOU NADA",
-     "evidence_quote_en": "Marked delivered but nothing arrived"
+     "evidence_quote_en": "It says delivered but nothing arrived"
     }
    ],
    "sentiment_score": -0.9,
@@ -1314,6 +1399,7 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-063233",
    "review_id": "3cda7f8c2c476f63509d6ba378e49da6",
    "issues": [
     {
@@ -1328,40 +1414,43 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-063746",
    "review_id": "4faa00afd506005a3d02010349b53761",
    "issues": [
     {
      "category": "quality_defect",
-     "severity": "high",
-     "evidence_quote": "algumas peças não fixa uma na outra",
-     "evidence_quote_en": "some pieces don't fit together"
+     "severity": "medium",
+     "evidence_quote": "Produto uma porcaria. Pequeno de mais e algumas peças não fixa uma na outra",
+     "evidence_quote_en": "Product is junk, too small, parts don't fit"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-065552",
    "review_id": "6e8474ed5e5c7becf90babaa898a7439",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
-     "evidence_quote": "O produto vei errado nao esta de acordo com a descriçao",
+     "evidence_quote": "O produto vei errado nao esta de acordo com a descriçao de venda",
      "evidence_quote_en": "Product came wrong, not as described"
     },
     {
      "category": "seller_communication",
      "severity": "medium",
-     "evidence_quote": "nao consigo falar no numero de sac",
-     "evidence_quote_en": "can't reach SAC number"
+     "evidence_quote": "nao consigo falar no numero de sac para reclamaçao e troca do produto",
+     "evidence_quote_en": "can't reach SAC to complain"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.9,
    "actionable_for_seller": true,
    "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-065641",
    "review_id": "f41f45f2eb10cfe7d05070d62e850959",
    "issues": [],
    "sentiment_score": 0.1,
@@ -1369,33 +1458,50 @@
    "confidence": 0.7
   },
   {
+   "sid": "012b61c7593e-067036",
    "review_id": "92a38f57ab94ec95ac80bc79b6fe97a6",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
-     "evidence_quote": "lustres vieram numa cor totalmente diferente do anunciado",
-     "evidence_quote_en": "chandeliers came in a totally different color"
+     "evidence_quote": "Os lustres vieram numa cor totalmente diferente do anunciado",
+     "evidence_quote_en": "Chandeliers came in a totally different color"
     },
     {
      "category": "seller_communication",
      "severity": "medium",
      "evidence_quote": "até agora nada",
-     "evidence_quote_en": "so far nothing"
+     "evidence_quote_en": "nothing so far"
     }
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-067136",
    "review_id": "3e1efa04ea755b0cbe9110ddc79f0747",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
      "evidence_quote": "SÓ RECEBI 3 VIDROS",
-     "evidence_quote_en": "only received 3 bottles"
+     "evidence_quote_en": "I only received 3 bottles"
+    }
+   ],
+   "sentiment_score": -0.9,
+   "actionable_for_seller": true,
+   "confidence": 0.9
+  },
+  {
+   "sid": "012b61c7593e-067572",
+   "review_id": "1eaed671b3c86d22324a5a6884458ca1",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "high",
+     "evidence_quote": "recebi somente 1",
+     "evidence_quote_en": "I received only 1"
     }
    ],
    "sentiment_score": -0.8,
@@ -1403,20 +1509,7 @@
    "confidence": 0.9
   },
   {
-   "review_id": "1eaed671b3c86d22324a5a6884458ca1",
-   "issues": [
-    {
-     "category": "missing_item",
-     "severity": "high",
-     "evidence_quote": "recebi somente 1",
-     "evidence_quote_en": "received only 1"
-    }
-   ],
-   "sentiment_score": -0.7,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
+   "sid": "012b61c7593e-069324",
    "review_id": "869083c0a0b00b30c977f257ca52c66d",
    "issues": [
     {
@@ -1431,13 +1524,14 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-070202",
    "review_id": "22fe5d28fc369be163eaa6fefaa1569b",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "medium",
      "evidence_quote": "Mt demora para entrega das mercadorias",
-     "evidence_quote_en": "Very slow delivery of goods"
+     "evidence_quote_en": "Very slow delivery"
     }
    ],
    "sentiment_score": -0.7,
@@ -1445,6 +1539,7 @@
    "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-070289",
    "review_id": "a5816093bbe9c85dab8f4aa62316d046",
    "issues": [
     {
@@ -1456,8 +1551,8 @@
     {
      "category": "seller_communication",
      "severity": "high",
-     "evidence_quote": "nem contato do fornecedor",
-     "evidence_quote_en": "no contact from supplier"
+     "evidence_quote": "Já mandei email via site das lannister e nada aconteceu",
+     "evidence_quote_en": "Emailed via site and nothing happened"
     }
    ],
    "sentiment_score": -0.9,
@@ -1465,20 +1560,22 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-071330",
    "review_id": "63a92248aeef614bdd06f73933f89532",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "só chegou um",
-     "evidence_quote_en": "only one arrived"
+     "evidence_quote": "Comprei dois intes e só chegou um",
+     "evidence_quote_en": "Bought two items, only one arrived"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-071603",
    "review_id": "4e424f744c8185c17c7d275a562ac344",
    "issues": [
     {
@@ -1493,81 +1590,73 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-071942",
    "review_id": "ac7ebe51f59d79b99898c9d541b3868d",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
-     "evidence_quote": "nada da entrega",
-     "evidence_quote_en": "no delivery"
+     "evidence_quote": "Estou a 3 dias em casa sem sair aguardando o produto e nada da entrega",
+     "evidence_quote_en": "Waiting 3 days at home, no delivery"
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
    "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-072016",
    "review_id": "039c4093d3e3f9d07fec60b2b1dd6444",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "o produto estava rachado e o conteúdo todo espalhado",
-     "evidence_quote_en": "product was cracked and contents spilled"
+     "evidence_quote_en": "product was cracked and contents spilled",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     },
     {
      "category": "packaging",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "com a embalagem estourada",
-     "evidence_quote_en": "packaging burst"
+     "evidence_quote_en": "packaging burst",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.88
   },
   {
+   "sid": "012b61c7593e-073234",
    "review_id": "6245c9a6fbd78013fb3c7128c1df45bb",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "recebi a mercadoria danificada",
-     "evidence_quote_en": "received damaged merchandise"
+     "evidence_quote_en": "received damaged goods",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-073390",
    "review_id": "8eb61fc560a7479dfe176b8ef1ccfbfa",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "O produto que recebi é diferente e inferior ao anunciado",
-     "evidence_quote_en": "product received is different and inferior"
-    }
-   ],
-   "sentiment_score": -0.8,
-   "actionable_for_seller": true,
-   "confidence": 0.95
-  },
-  {
-   "review_id": "29a386b840ba3eab0985d34a1ff3b7b3",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "high",
-     "evidence_quote": "A voltagem veio errada",
-     "evidence_quote_en": "wrong voltage"
-    },
-    {
-     "category": "delivery_late",
-     "severity": "medium",
-     "evidence_quote": "demorou de mais pra chegar",
-     "evidence_quote_en": "took too long to arrive"
+     "evidence_quote_en": "product received is different and inferior to advertised",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     }
    ],
    "sentiment_score": -0.7,
@@ -1575,248 +1664,324 @@
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-075294",
+   "review_id": "29a386b840ba3eab0985d34a1ff3b7b3",
+   "issues": [
+    {
+     "category": "wrong_product",
+     "severity": "medium",
+     "evidence_quote": "A voltagem veio errada",
+     "evidence_quote_en": "wrong voltage came",
+     "actionable_for_seller": true,
+     "confidence": 0.9
+    },
+    {
+     "category": "delivery_late",
+     "severity": "medium",
+     "evidence_quote": "demorou de mais pra chegar",
+     "evidence_quote_en": "took too long to arrive",
+     "actionable_for_seller": true,
+     "confidence": 0.8
+    }
+   ],
+   "sentiment_score": -0.5,
+   "actionable_for_seller": true,
+   "confidence": 0.85
+  },
+  {
+   "sid": "012b61c7593e-075550",
    "review_id": "8076342482e34e57ef1b94a31cc847a2",
    "issues": [],
-   "sentiment_score": 0.8,
+   "sentiment_score": 0.6,
    "actionable_for_seller": false,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-075600",
    "review_id": "1686235a474e47e1a0b469ba8372c9d5",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
      "evidence_quote": "estava faltando uma peça, que na verdade a peça principal",
-     "evidence_quote_en": "missing a part, the main part"
+     "evidence_quote_en": "a part was missing, the main part",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-076725",
    "review_id": "b9eab909ea5dd345f9b498136dd232ea",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "Recebi o produto avariado",
-     "evidence_quote_en": "received damaged product"
+     "evidence_quote_en": "received damaged product",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     },
     {
      "category": "seller_communication",
-     "severity": "high",
-     "evidence_quote": "estou entrando em contato e ninguém resolve nada",
-     "evidence_quote_en": "contacting and nobody resolves"
-    }
-   ],
-   "sentiment_score": -0.9,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "8ef67c8b45b1275815b34e5e12b5b3cd",
-   "issues": [
-    {
-     "category": "other",
-     "severity": "low",
-     "evidence_quote": "recebi a nota fiscal sozinha num dia e só no outro dia recebi o produto",
-     "evidence_quote_en": "invoice alone one day, product next day"
-    }
-   ],
-   "sentiment_score": -0.3,
-   "actionable_for_seller": false,
-   "confidence": 0.7
-  },
-  {
-   "review_id": "c8f87e249f8573942b8b8c7fae93aa52",
-   "issues": [],
-   "sentiment_score": 0.2,
-   "actionable_for_seller": false,
-   "confidence": 0.6
-  },
-  {
-   "review_id": "006c4a3214f327318cf1553162ae0820",
-   "issues": [
-    {
-     "category": "quality_defect",
      "severity": "medium",
-     "evidence_quote": "Cores fracas e apagadas",
-     "evidence_quote_en": "weak faded colors"
+     "evidence_quote": "estou entrando em contato e ninguém resolve nada",
+     "evidence_quote_en": "contacting and nobody resolves anything",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     }
    ],
-   "sentiment_score": -0.5,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
    "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-077275",
+   "review_id": "8ef67c8b45b1275815b34e5e12b5b3cd",
+   "issues": [],
+   "sentiment_score": -0.2,
+   "actionable_for_seller": false,
+   "confidence": 0.7
+  },
+  {
+   "sid": "012b61c7593e-079480",
+   "review_id": "c8f87e249f8573942b8b8c7fae93aa52",
+   "issues": [],
+   "sentiment_score": 0.1,
+   "actionable_for_seller": false,
+   "confidence": 0.6
+  },
+  {
+   "sid": "012b61c7593e-079733",
+   "review_id": "006c4a3214f327318cf1553162ae0820",
+   "issues": [
+    {
+     "category": "quality_defect",
+     "severity": "low",
+     "evidence_quote": "Cores fracas e apagadas",
+     "evidence_quote_en": "weak faded colors",
+     "actionable_for_seller": true,
+     "confidence": 0.7
+    }
+   ],
+   "sentiment_score": -0.4,
+   "actionable_for_seller": true,
+   "confidence": 0.7
+  },
+  {
+   "sid": "012b61c7593e-081311",
    "review_id": "fe7aa51c78e86b75f01db4f5f91c8c2f",
    "issues": [
     {
+     "category": "quality_defect",
+     "severity": "high",
+     "evidence_quote": "Produto não é original",
+     "evidence_quote_en": "product is not original",
+     "actionable_for_seller": true,
+     "confidence": 0.85
+    },
+    {
      "category": "wrong_product",
      "severity": "high",
-     "evidence_quote": "Produto não é original, e não era isso que tinha no anúncio",
-     "evidence_quote_en": "not original, not as advertised"
+     "evidence_quote": "não era isso que tinha no anúncio",
+     "evidence_quote_en": "not what was in the listing",
+     "actionable_for_seller": true,
+     "confidence": 0.8
     }
    ],
-   "sentiment_score": -0.9,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.82
   },
   {
+   "sid": "012b61c7593e-082221",
    "review_id": "9efef4d70190c1bdb9b12872cc8144fc",
    "issues": [
     {
      "category": "quality_defect",
-     "severity": "medium",
-     "evidence_quote": "pequeno rasgo na contra capa e varias paginas amassadas",
-     "evidence_quote_en": "small tear and several crumpled pages"
+     "severity": "low",
+     "evidence_quote": "um pequeno rasgo na contra capa e varias paginas amassadas",
+     "evidence_quote_en": "small tear on back cover and several crumpled pages",
+     "actionable_for_seller": true,
+     "confidence": 0.8
     }
    ],
-   "sentiment_score": -0.6,
-   "actionable_for_seller": true,
-   "confidence": 0.9
-  },
-  {
-   "review_id": "4fa7156d5b704f6d5a3c3f8a93084829",
-   "issues": [
-    {
-     "category": "wrong_product",
-     "severity": "medium",
-     "evidence_quote": "veio apenas uma caixa",
-     "evidence_quote_en": "only one box came"
-    }
-   ],
-   "sentiment_score": -0.6,
+   "sentiment_score": -0.4,
    "actionable_for_seller": true,
    "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-082946",
+   "review_id": "4fa7156d5b704f6d5a3c3f8a93084829",
+   "issues": [
+    {
+     "category": "missing_item",
+     "severity": "medium",
+     "evidence_quote": "imaginei que viessem juntos os protetores individuais dos cardápios, mas veio apenas uma caixa",
+     "evidence_quote_en": "expected individual protectors but only one box came",
+     "actionable_for_seller": true,
+     "confidence": 0.6
+    }
+   ],
+   "sentiment_score": -0.4,
+   "actionable_for_seller": true,
+   "confidence": 0.6
+  },
+  {
+   "sid": "012b61c7593e-083633",
    "review_id": "193ceae3dafd21d6b4f902785799b791",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "só embalaram e enviaram 1 jogo",
-     "evidence_quote_en": "only packed and sent 1 set"
+     "evidence_quote": "Paguei por dois jogos de lençol queen , veio na nota 2, mas só embalaram e enviaram 1 jogo",
+     "evidence_quote_en": "paid for two sheet sets but only one shipped",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     },
     {
      "category": "seller_communication",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "Já fiz reclamação e até agora não me atenderam",
-     "evidence_quote_en": "complained and not attended"
+     "evidence_quote_en": "complained and not attended yet",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     }
    ],
-   "sentiment_score": -0.9,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.88
   },
   {
+   "sid": "012b61c7593e-084386",
    "review_id": "de292a99e33f4dd61cd09fa514e079f9",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "high",
      "evidence_quote": "Fonte veio diferente do anunciado",
-     "evidence_quote_en": "power supply different from advertised"
+     "evidence_quote_en": "power supply came different from advertised",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     }
    ],
-   "sentiment_score": -0.7,
+   "sentiment_score": -0.6,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-085446",
    "review_id": "0ef03d58e2f75c024fdcaf768418a366",
    "issues": [
     {
      "category": "wrong_product",
      "severity": "medium",
      "evidence_quote": "veio na cor errada",
-     "evidence_quote_en": "came in wrong color"
+     "evidence_quote_en": "came in wrong color",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     }
    ],
-   "sentiment_score": -0.4,
+   "sentiment_score": -0.3,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-085876",
    "review_id": "3da1047b6fc7c0fa63ae23b1777488fd",
    "issues": [
     {
      "category": "packaging",
      "severity": "medium",
      "evidence_quote": "o celular chegou com lacre da embalagem violado",
-     "evidence_quote_en": "phone seal violated"
+     "evidence_quote_en": "phone arrived with packaging seal violated",
+     "actionable_for_seller": true,
+     "confidence": 0.8
     }
    ],
-   "sentiment_score": -0.5,
+   "sentiment_score": -0.4,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.8
   },
   {
+   "sid": "012b61c7593e-086259",
    "review_id": "96a96d896a3eefa360ce15e68c29c380",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "Até hoje não recebi meu produto",
-     "evidence_quote_en": "still haven't received product"
+     "evidence_quote_en": "to this day did not receive my product",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     }
    ],
    "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-086515",
    "review_id": "7bdf866f80d71312b3ee747a4145ae9d",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "medium",
-     "evidence_quote": "o carteiro não foi atendido",
-     "evidence_quote_en": "courier not attended"
+     "evidence_quote": "tava que o carteiro não foi atendido",
+     "evidence_quote_en": "status said courier was not attended",
+     "actionable_for_seller": false,
+     "confidence": 0.5
     }
    ],
-   "sentiment_score": -0.6,
+   "sentiment_score": -0.5,
    "actionable_for_seller": false,
-   "confidence": 0.7
+   "confidence": 0.5
   },
   {
+   "sid": "012b61c7593e-086577",
    "review_id": "1d31a370d6a5a747a52c3f3f58adab85",
    "issues": [
     {
      "category": "missing_item",
      "severity": "high",
-     "evidence_quote": "a loja me manda só um",
-     "evidence_quote_en": "store sent only one"
+     "evidence_quote": "Eu fiz a compra de 2 cobertores a loja me manda só um",
+     "evidence_quote_en": "bought 2 blankets, store sent only one",
+     "actionable_for_seller": true,
+     "confidence": 0.9
     },
     {
      "category": "seller_communication",
-     "severity": "high",
+     "severity": "medium",
      "evidence_quote": "fiz uma reclamação é até agora não fui atendida",
-     "evidence_quote_en": "complained and not attended"
+     "evidence_quote_en": "complained and not attended yet",
+     "actionable_for_seller": true,
+     "confidence": 0.85
     }
    ],
-   "sentiment_score": -0.9,
+   "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.88
   },
   {
+   "sid": "012b61c7593e-087056",
    "review_id": "fdba80a1422aa43f8c7001d0b8d4bd09",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
-     "evidence_quote": "esse afiador e uma porcaria",
-     "evidence_quote_en": "this sharpener is junk"
+     "evidence_quote": "esse afiador e uma porcaria ,enganação",
+     "evidence_quote_en": "this sharpener is junk, a scam"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-087762",
    "review_id": "1bfec3e913196c72c1ea06fc8816bd9c",
    "issues": [
     {
@@ -1828,37 +1993,40 @@
    ],
    "sentiment_score": -0.8,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-088301",
    "review_id": "26c4f5c4afe6aa8f0573f4c0b5b4610c",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
-     "evidence_quote": "mais de um mês que efetuei a compra e ainda o produto não chegou",
+     "evidence_quote": "já tem mais de um mês que efetuei a compra e ainda o produto não chegou",
      "evidence_quote_en": "over a month since purchase and product hasn't arrived"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.85,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-090703",
    "review_id": "ec1eb37d31e3c454d3a2660f2b44e1ad",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "medium",
      "evidence_quote": "Achei o tapete muito fino...não gostei",
-     "evidence_quote_en": "found the rug too thin, didn't like it"
+     "evidence_quote_en": "I found the rug too thin, didn't like it"
     }
    ],
-   "sentiment_score": -0.6,
+   "sentiment_score": -0.5,
    "actionable_for_seller": true,
-   "confidence": 0.85
+   "confidence": 0.75
   },
   {
+   "sid": "012b61c7593e-090732",
    "review_id": "5b34a3fbcbe815d25fd76e923766b217",
    "issues": [
     {
@@ -1870,104 +2038,111 @@
    ],
    "sentiment_score": -0.7,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-092046",
    "review_id": "7bce4292f27311396ffcb566cb215046",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "low",
-     "evidence_quote": "pequenos detalhes no acabamento e quanto ao texto original",
-     "evidence_quote_en": "small finishing details and original text"
+     "evidence_quote": "alguns pequenos detalhes no acabamento e quanto ao texto original que vem escrito no produto",
+     "evidence_quote_en": "some small finishing details and the original text on the product"
     }
    ],
-   "sentiment_score": 0.3,
+   "sentiment_score": 0.2,
    "actionable_for_seller": true,
-   "confidence": 0.7
+   "confidence": 0.6
   },
   {
+   "sid": "012b61c7593e-092625",
    "review_id": "93b94e5f223d7fcc8c3d61f6f672e5d7",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "Faz quase 1 mês que comprei o kit provençal e até hoje não recebi",
-     "evidence_quote_en": "almost a month since purchase and still not received"
+     "evidence_quote_en": "almost a month since I bought and haven't received it"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.85,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-093371",
    "review_id": "06408729c86f3acfa45f4545c96ce67c",
    "issues": [
     {
      "category": "missing_item",
      "severity": "medium",
      "evidence_quote": "Recebi o MP3 sem o fone de ouvido",
-     "evidence_quote_en": "received MP3 without earphones"
+     "evidence_quote_en": "received the MP3 without the earphones"
     }
    ],
    "sentiment_score": -0.6,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-094102",
    "review_id": "581471a944044d659e03e85343fcf071",
    "issues": [
     {
      "category": "quality_defect",
      "severity": "high",
      "evidence_quote": "Recebi um produto falsificado",
-     "evidence_quote_en": "received a counterfeit product"
+     "evidence_quote_en": "I received a counterfeit product"
     }
    ],
    "sentiment_score": -0.9,
    "actionable_for_seller": true,
-   "confidence": 0.95
+   "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-094412",
    "review_id": "7a9438aceee43236b521668ff377b01a",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
      "evidence_quote": "o prazo de entrega era até 14/03/17, porém não foi entregue",
-     "evidence_quote_en": "delivery deadline was 03/14/17 but not delivered"
-    },
-    {
-     "category": "seller_communication",
-     "severity": "medium",
-     "evidence_quote": "me informou que meu produto nem saiu do fornecedor",
-     "evidence_quote_en": "informed me product hadn't left supplier"
+     "evidence_quote_en": "delivery deadline was 03/14/17 but it wasn't delivered"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.85,
    "actionable_for_seller": true,
    "confidence": 0.9
   },
   {
+   "sid": "012b61c7593e-095036",
    "review_id": "4ee5ebba54ad522a39ee652ff3f2a484",
    "issues": [
     {
      "category": "delivery_late",
      "severity": "high",
-     "evidence_quote": "Não recebi e ainda não recebi nenhuma satisfação",
-     "evidence_quote_en": "didn't receive and got no explanation"
+     "evidence_quote": "Não recebi",
+     "evidence_quote_en": "I didn't receive it"
+    },
+    {
+     "category": "seller_communication",
+     "severity": "medium",
+     "evidence_quote": "ainda não recebi nenhuma satisfação",
+     "evidence_quote_en": "still no response/satisfaction"
     }
    ],
-   "sentiment_score": -0.8,
+   "sentiment_score": -0.85,
    "actionable_for_seller": true,
-   "confidence": 0.9
+   "confidence": 0.85
   },
   {
+   "sid": "012b61c7593e-098394",
    "review_id": "23dc31f042a8c9e3ef8f0c3229cc1cca",
    "issues": [],
-   "sentiment_score": 0.5,
+   "sentiment_score": 0,
    "actionable_for_seller": false,
-   "confidence": 0.6
+   "confidence": 0.9
   }
  ]
 }
